@@ -1,4 +1,3 @@
-import fallingClockPic from '../../assets/clock-with-bright-falling-sequins.jpg'
 import styles from './Home.module.css'
 
 export default function Home() {
@@ -25,7 +24,7 @@ export default function Home() {
 
       <div className={styles.plan_container}>
           <div className={styles.plan}>
-            <button className={styles.btn} role="button">Introduction</button>
+            <a href='/' className={styles.btn} role="button">Introduction</a>
             <button className={styles.btn} role="button">L'importance de gestion du temps</button>
             <button className={styles.btn} role="button">Les défis de la gestion du temps</button>
             <button className={styles.btn} role="button">Les methodes de gestion du temps</button>
