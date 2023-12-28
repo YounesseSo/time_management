@@ -25,11 +25,11 @@ export default function Home() {
 
       <div className={styles.plan_container}>
           <div className={styles.plan}>
-            <Link to='/intro' className={styles.btn} role="button">Introduction</Link>
-            <Link to='/intro' className={styles.btn} role="button">L'importance de gestion du temps</Link>
-            <Link to='/intro' className={styles.btn} role="button">Les défis de la gestion du temps</Link>
-            <Link to='/intro'className={styles.btn} role="button">Les methodes de gestion du temps</Link>
-            <Link to='/intro' className={styles.btn} role="button">Conclusion</Link>
+            <Link to='/intro' className={styles.btn} role="button" data-aos="fade-up-right">Introduction</Link>
+            <Link to='/intro' className={styles.btn} role="button" data-aos="fade-up-left">L'importance de gestion du temps</Link>
+            <Link to='/intro' className={styles.btn} role="button" data-aos="fade-up-right">Les défis de la gestion du temps</Link>
+            <Link to='/intro'className={styles.btn} role="button" data-aos="fade-up-left">Les methodes de gestion du temps</Link>
+            <Link to='/intro' className={styles.btn} role="button" data-aos="fade-up-right">Conclusion</Link>
 
           </div>
 
