@@ -6,7 +6,7 @@ export default function Intro() {
   return (
     <div className={styles.container} >
   
-      <div className={styles.wrapper} data-aos="zoom-in">
+      <div className={styles.wrapper} data-aos="fade-right">
         <h1 className={styles.title}>Introduction</h1>
         <div className={styles.body}>
             <p>

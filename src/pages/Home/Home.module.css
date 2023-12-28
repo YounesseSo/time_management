@@ -1,11 +1,16 @@
 
+.container{
+    background-color: rgba(0, 0, 0, .5);
+    background-size: cover;
+    background-image: url('bg.jpg');
+    background-position: center;
+    background-blend-mode: multiply;
+    
+}
+
 .hero_container{
     height: 100svh;
-    padding: 0 1em;
-    background-size: cover;
-    background-color: rgba(0, 0, 0, .2);
-    background-image: url('background.jpg');
-    background-blend-mode: multiply;
+    padding:  1em;
     display: flex;
     flex-direction:column;
     justify-content:space-between;
@@ -15,11 +20,23 @@
     }
 
     .title{
-        font-size: 9rem;
+        font-size: 4rem;
         text-transform: uppercase;
-        text-shadow: 0px 0px 11px black;
+        /* text-shadow: 0px 0px 11px black; */
         @media (max-width:700px) {
-          font-size: 4rem;
+          font-size: 2rem;
+        }
+
+        span{
+          font-weight: 200;
+          width: fit-content;
+          font-style: italic;
+          color: white;
+          text-shadow: 0 0 11px black;
+          text-transform: lowercase;
+          background-image: linear-gradient(transparent 60%, rgba(255, 217, 0, 0.685) 40%);
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
         }
     }
     
@@ -56,28 +73,32 @@
 
 
 .plan_container{
-    height: 100svh;
-    background-image: url('background-1398819_1280.jpg');
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 90svh;
+    /* background-image: url('background-1398819_1280.jpg'); */
+    .plan{
+      max-width: 700px;
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      margin-top: 5rem;
+      gap: 4rem;
+      @media (max-width:700px) {
+        width: 90%;
+      }
+  
+      .btn{
+        rotate :-2deg;
+        
+      }
+      .btn:nth-child(2n){
+          align-self: flex-end;
+          rotate :2deg;
+      }
+      
+  }
+  
 }
 
-.plan{
-    width: 900px;
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-    @media (max-width:700px) {
-      width: 90%;
-    }
-
-    .btn:nth-child(2n){
-        align-self: flex-end;
-        transform: rotate(2deg);
-    }
-}
 
 /* Buttons style */
 .btn {

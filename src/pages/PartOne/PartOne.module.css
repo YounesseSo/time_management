@@ -1,7 +1,7 @@
 .container{
     padding: 1rem;
     min-height: 100svh;
-    background: url('background-1398819_1280.jpg') rgba(0, 0, 0, .5);
+    background: url('background-1398819_1280.jpg') rgba(0, 0, 0, .8);
     background-size: cover;
     background-blend-mode: multiply;
 }
@@ -37,11 +37,16 @@
    .body_section{
         color: white;
         font-weight: 200;
-        font-size: 1.7rem;
         line-height: 2.9rem;
         margin-top: 1rem;
         p{
+            margin-top: 1rem;
+            font-size: 1.9rem;
             max-width: 900px;
+        }
+
+        .image{
+            max-width: 800px;
         }
    }
     
