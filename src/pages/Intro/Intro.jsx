@@ -4,9 +4,9 @@ import BottomNavigation from '../../components/BottomNavigation/BottomNavigation
 
 export default function Intro() {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} >
   
-      <div className={styles.wrapper}>
+      <div className={styles.wrapper} data-aos="zoom-in">
         <h1 className={styles.title}>Introduction</h1>
         <div className={styles.body}>
             <p>

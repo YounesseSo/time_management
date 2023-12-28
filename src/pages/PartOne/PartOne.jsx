@@ -5,7 +5,7 @@ export default function PartOne() {
   return (
     <div className={styles.container}>
 
-        <div className={styles.wrapper}>
+        <div className={styles.wrapper} data-aos="flip-right" data-aos-duration='2000'>
             <h1 className={styles.title}>L'importance de la gestion du temps</h1>
 
             <section className={styles.section}>
