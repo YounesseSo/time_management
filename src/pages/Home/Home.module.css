@@ -2,7 +2,7 @@
 .container{
     background-color: rgba(0, 0, 0, .5);
     background-size: cover;
-    background-image: url('bg.jpg');
+    background-image: url('/bg.jpg');
     background-position: center;
     background-blend-mode: multiply;
     

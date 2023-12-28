@@ -1,7 +1,7 @@
 .container{
     padding: 1rem;
     min-height: 100svh;
-    background: url('background-1398819_1280.jpg') rgba(0, 0, 0, .8);
+    background: url('/background-1398819_1280.jpg') rgba(0, 0, 0, .8);
     background-size: cover;
     background-blend-mode: multiply;
 }
