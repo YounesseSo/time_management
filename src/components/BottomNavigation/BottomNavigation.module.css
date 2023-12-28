@@ -1,0 +1,36 @@
+.container {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+
+    .link{
+        color: white;
+        font-family: inherit;
+        text-decoration: none;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        position: relative;
+        z-index: 0;
+        &::before{
+            content: '';
+            height: 100%;
+            top: 0;
+            position: absolute;
+            background-color: white;
+            width: 100%;
+            transform: scaleX(0);
+            transform-origin: left;
+            z-index: -1;
+            transition: transform 400ms ease;
+        }
+        &:hover {
+            color: black;
+            &::before{
+                transform: scaleX(1);
+            }
+        }
+    }
+
+}
