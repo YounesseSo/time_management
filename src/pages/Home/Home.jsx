@@ -26,10 +26,10 @@ export default function Home() {
       <div className={styles.plan_container}>
           <div className={styles.plan}>
             <Link to='/intro' className={styles.btn} role="button">Introduction</Link>
-            <Link to='/intro' className={styles.btn} role="button">L'importance de gestion du temps</Link>
-            <Link to='/intro' className={styles.btn} role="button">Les défis de la gestion du temps</Link>
-            <Link to='/intro'className={styles.btn} role="button">Les methodes de gestion du temps</Link>
-            <Link to='/intro' className={styles.btn} role="button">Conclusion</Link>
+            <Link to='/part-1' className={styles.btn} role="button">L'importance de gestion du temps</Link>
+            <Link to='/part-2' className={styles.btn} role="button">Les défis de la gestion du temps</Link>
+            <Link to='/part-3'className={styles.btn} role="button">Les methodes de gestion du temps</Link>
+            <Link to='/conclusion' className={styles.btn} role="button">Conclusion</Link>
 
           </div>
 
