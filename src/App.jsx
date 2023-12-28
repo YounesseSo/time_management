@@ -5,7 +5,7 @@ import Intro from './pages/Intro/Intro';
 import PartOne from './pages/PartOne/PartOne';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
-import PartTew from './pages/PartTew/PartTew';
+import PartTwo from './pages/PartTwo/PartTwo';
 AOS.init({
   offset:200,
   delay:50,
@@ -20,7 +20,7 @@ function App() {
           <Route path='/' element={<Home/>} />          
           <Route path='/intro' element={<Intro/>} />     
           <Route path='/part-1' element={<PartOne/>} />          
-          <Route path='/part-2' element={<PartTew/>} />          
+          <Route path='/part-2' element={<PartTwo/>} />          
         </Routes>
       </BrowserRouter>
     </>

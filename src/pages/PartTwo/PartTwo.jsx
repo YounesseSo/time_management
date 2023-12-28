@@ -1,7 +1,7 @@
 import BottomNavigation from '../../components/BottomNavigation/BottomNavigation'
-import styles from './PartTew.module.css'
+import styles from './PartTwo.module.css'
 
-export default function PartTew() {
+export default function PartTwo() {
   return (
     <div className={styles.container}>
 
