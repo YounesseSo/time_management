@@ -30,7 +30,7 @@ export default function Home() {
             <Link to='/intro' className={styles.btn} role="button" data-aos='fade-right'>Introduction</Link>
             <Link to='/part-1' className={styles.btn} role="button" data-aos='fade-left'>L'importance de gestion du temps</Link>
             <Link to='/part-2' className={styles.btn} role="button" data-aos='fade-right'>Les défis de la gestion du temps</Link>
-            <Link to='/part-3'className={styles.btn} role="button" data-aos='fade-left'>Les methodes de gestion du temps</Link>
+            <Link to='/part-3' className={styles.btn} role="button" data-aos='fade-left'>Les methodes de gestion du temps</Link>
             <Link to='/conclusion' className={styles.btn} role="button" data-aos='fade-right'>Conclusion</Link>
           </div>
 
