@@ -1,5 +1,7 @@
 .container {
     margin-top: 5rem;
+    flex-wrap: wrap;
+    gap: 2rem;
     display: flex;
     justify-content: space-between;
 

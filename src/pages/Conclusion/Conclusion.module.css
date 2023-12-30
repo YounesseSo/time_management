@@ -1,0 +1,29 @@
+
+.container{
+    min-height: 100svh;
+    padding: 1px;
+    background: url('/background-1398819_1280.jpg') rgba(0, 0, 0, .8);
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.wrapper{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    .title{
+        color: white;
+        font-size: 4rem;
+        margin-top: 1rem;
+    }
+    .body{
+        color: white;
+        font-weight: 200;
+        font-size: 2rem;
+        line-height: 2.9rem;
+        margin-top: 2rem;
+        p{
+            max-width: 900px;
+        }
+    }
+}
