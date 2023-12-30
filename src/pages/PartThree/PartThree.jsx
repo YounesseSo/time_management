@@ -1,32 +1,105 @@
+import { useEffect, useState } from 'react'
 import BottomNavigation from '../../components/BottomNavigation/BottomNavigation'
 import styles from './PartThree.module.css'
+
+import MethodOneModal from './MethodOneModal/MethodOneModal'
+import MethodTwoModal from './MethodTwoModal/MethodTwoModal'
+import MethodThreeModal from './MethodThreeModal/MethodThreeModal';
+
 export default function PartThree() {
+    const [showModal , setShowModal] = useState(null)
+    
+    useEffect(()=>{
+        if(showModal) document.body.style.overflowY = 'hidden';
+        else document.body.style.overflowY = 'auto';
+
+        return ()=> document.body.style.overflowY= 'auto';
+    },[showModal])
+
+    function getModal(){
+
+        switch(showModal){
+            case 1 :
+                return <MethodOneModal setShowModal={setShowModal}/>
+            case 2 :
+                return <MethodTwoModal setShowModal={setShowModal}/>
+            case 3 :
+                return <MethodThreeModal setShowModal={setShowModal}/>
+        }
+    }
+
+
     return (
         <div className={styles.container} >
-    
+            
             <div className={styles.wrapper} >
                 <h1 className={styles.title} data-aos="fade-right">Les methodes de la gestion du temps</h1>
-                <section className={styles.section} data-aos="fade-right"> 
-                    <h2 className={styles.title_section}>Matrice d'Eisenhower</h2>
-                    <div className={styles.body_section}>
+                <div className={styles.cards_container}>
+                    {/* <section className={styles.card} > 
+                        <h2 className={styles.title}>Matrice d'Eisenhower</h2>
                         <img className={styles.image} src="/eisenhower-matrice.png" alt="eisenhower-matrice" />
-                
-                        <p>
-                        Cette méthode classe les tâches en fonction de leur urgence et de leur importance dans un tableau à quatre quadrants : urgent et important, urgent mais pas important, important mais pas urgent, ni urgent ni important. Cela aide à prioriser les tâches et à se concentrer sur celles qui ont le plus d'impact.                        </p>                
+                        <div className={styles.body}>
+                    
+                            <p>
+                            Cette méthode classe les tâches en fonction de leur urgence et de leur importance dans un tableau à quatre quadrants : urgent et important, urgent mais pas important, important mais pas urgent, ni urgent ni important. Cela aide à prioriser les tâches et à se concentrer sur celles qui ont le plus d'impact.                        
+                            </p>                
                         </div>
-                </section>
-    
-                <section className={styles.section} data-aos="fade-right">
-                    <h2 className={styles.title_section}>La méthode Pomodoro</h2>
-                    <div className={styles.body_section}>
-                        <img className={styles.image} src="/methode_pomodoro.png" alt="methode_pomodoro" />
-                        <p>
-                        Le principe de cette méthode est simple : elle consiste à découper ses tâches en sessions de travail de 25 minutes sans interruption, entrecoupées de pauses de 5 minutes. On dit qu’un intervalle de travail correspond à un pomodoro. Après 4 pomodoros, vous pouvez prendre une pause plus longue de 15 à 30 minutes.                        </p>
-                    </div>
-                </section>
-                <BottomNavigation previous={{path:'/part-2' , name:'Les défis de la gestion du temps'}} next={{path:'part-4' , name:'Conclusion'}}/>
-            </div>    
+                    </section> */}
         
+
+                    <section className={styles.card_container} onClick={()=>setShowModal(1)}>
+                        <div className={styles.card}>
+                            <div className={styles.title}>
+                                <h2 >Matrice d'Eisenhower</h2>
+                            </div>
+                            <div className={styles.image}>
+                                <img  src="/matrice-eisenhower.webp" alt="methode_eisenhower" />
+                            </div>
+                        </div>
+
+                        <div className={styles.border}></div>
+
+                    </section>
+
+
+                    <section className={styles.card_container} onClick={()=>setShowModal(2)}>
+                        <div className={styles.card}>
+                            <div className={styles.title}>
+                                <h2 >La méthode Pomodoro</h2>
+                            </div>
+                            <div className={styles.image}>
+                                <img  src="/methode_pomodoro.png" alt="methode_pomodoro" />
+                            </div>
+                        </div>
+                        
+                        <div className={styles.border}></div>
+
+                    </section>
+
+
+                    <section className={styles.card_container} onClick={()=>setShowModal(3)}>
+                        <div className={styles.card}>
+                            <div className={styles.title}>
+                                <h2 >La méthode Pomodoro</h2>
+                            </div>
+                            <div className={styles.image}>
+                                <img  src="/methode_pomodoro.png" alt="methode_pomodoro" />
+                            </div>
+
+                        </div>
+                        
+                        <div className={styles.border}></div>
+
+                    </section>
+
+                </div>
+                <BottomNavigation previous={{path:'/part-2' , name:'Les défis de la gestion du temps'}} next={{path:'/conclusion' , name:'Conclusion'}}/>
+            </div>    
+                                
+            {
+                showModal && getModal()
+
+            }
         </div>
       )
 }
