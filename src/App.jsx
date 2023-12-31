@@ -11,7 +11,7 @@ import PartTwo from './pages/PartTwo/PartTwo';
 import PartThree from './pages/PartThree/PartThree';
 import Conclusion from './pages/Conclusion/Conclusion';
 AOS.init({
-  offset:200,
+  offset:50,
   delay:50,
   duration:1000
 });

@@ -4,13 +4,13 @@
     width: 100%;
     left: 0;
     top: 0;
-    background-color: white;
     animation: dropDown 400ms ease forwards;
 }
 
 .inner_container{
     padding-bottom: 1rem;
     height: 100svh;
+    background-color: white;
     overflow-y: auto;
 }
 
