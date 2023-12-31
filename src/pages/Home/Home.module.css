@@ -1,5 +1,6 @@
 
 .container{
+    overflow-x: hidden;
     background-color: rgba(0, 0, 0, .5);
     background-size: cover;
     background-image: url('/bg.jpg');

@@ -80,10 +80,10 @@ export default function PartThree() {
                     <section className={styles.card_container} onClick={()=>setShowModal(3)}>
                         <div className={styles.card}>
                             <div className={styles.title}>
-                                <h2 >La méthode Pomodoro</h2>
+                                <h2 >La méthode de Blocage de temps</h2>
                             </div>
                             <div className={styles.image}>
-                                <img  src="/methode_pomodoro.png" alt="methode_pomodoro" />
+                                <img  src="/time-blocking.png" alt="time blocking" />
                             </div>
 
                         </div>
