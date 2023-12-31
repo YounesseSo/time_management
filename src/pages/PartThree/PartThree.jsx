@@ -83,7 +83,7 @@ export default function PartThree() {
                                 <h2 >La méthode Pomodoro</h2>
                             </div>
                             <div className={styles.image}>
-                                <img  src="/methode_pomodoro.png" alt="methode_pomodoro" />
+                                <img  src="/eisenhower-matrice.png" alt="eisenhower-matrice" />
                             </div>
 
                         </div>
