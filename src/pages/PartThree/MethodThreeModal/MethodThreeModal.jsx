@@ -7,7 +7,7 @@ export default function MethodThreeModal({setShowModal}) {
         <div className={styles.inner_container}>
 
             <div className={styles.header}>
-                <h1>La matrice d’Eisenhower</h1>
+                <h1>La méthode de Blocage de temps</h1>
                 <button onClick={()=>setShowModal(false)}>
                     <IoClose size={29}/>
                 </button>

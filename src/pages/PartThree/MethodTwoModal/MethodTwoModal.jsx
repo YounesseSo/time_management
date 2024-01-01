@@ -9,7 +9,7 @@ export default function MethodTwoModal({setShowModal}) {
         <div className={styles.inner_container}>
 
             <div className={styles.header}>
-                <h1>La matrice Pomodoro</h1>
+                <h1>La méthode Pomodoro</h1>
                 <button onClick={()=>setShowModal(false)}>
                     <IoClose size={29}/>
                 </button>
