@@ -13,7 +13,7 @@ export default function Conclusion() {
           </p>
       </div>
 
-      <BottomNavigation previous={{path:'/part-3' , name:'Les methodes de gestion du temps'}} next={{path:'/' , name:'Acceuil'}}/>
+      <BottomNavigation previous={{path:'/part-3' , name:'Les methodes de gestion du temps'}} next={{path:'/end' , name:'La Fin'}}/>
     </div>
 
   
