@@ -12,14 +12,14 @@ export default function Home() {
           <div className={styles.details}>
               <ul>
                 <span>Réalisé par</span>
-                <li>Snipe harvard</li>
-                <li>Snipe harvard</li>
-                <li>Snipe harvard</li>
+                <li>BOUKHOUID Faycal</li>
+                <li>SOUISSI Younesse</li>
+                <li>BADDI Abdelkrim</li>
               </ul>
 
               <ul>
                 <span>Encadrée par</span> 
-                <li>Teacher</li>
+                <li>Mme. HANANE</li>
               </ul>
           </div>
 

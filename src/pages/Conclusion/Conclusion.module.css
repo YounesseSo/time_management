@@ -2,7 +2,7 @@
 .container{
     min-height: 100svh;
     padding: 1px;
-    background: url('/background-1398819_1280.jpg') rgba(0, 0, 0, .8);
+    background: url('/background-1398819_1280.jpg') rgba(0, 0, 0, .4);
     background-size: cover;
     background-blend-mode: multiply;
 }
@@ -12,9 +12,16 @@
     height: 100%;
     margin: 0 auto;
     .title{
+
         color: white;
         font-size: 4rem;
         margin-top: 1rem;
+        max-width: fit-content;
+        /* text-shadow: 0 0 9px black;
+        background-image: linear-gradient(transparent 60%, goldenrod 40%) ;         */
+        @media (max-width:700px) {
+            font-size: 2rem;
+        }
     }
     .body{
         color: white;
@@ -23,7 +30,14 @@
         line-height: 2.9rem;
         margin-top: 2rem;
         p{
+            text-shadow: 0 0 9px black;
             max-width: 900px;
+            span{
+                background-image: linear-gradient(transparent 60%, rgba(218, 165, 32, 0.676) 40%) ;
+                background-repeat: no-repeat;
+                background-size: 100%;        
+                
+            }
         }
     }
 }

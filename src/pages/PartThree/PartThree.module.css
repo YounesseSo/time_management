@@ -1,7 +1,7 @@
 .container{
     padding: 1rem;
     min-height: 100svh;
-    background: url('/background-1398819_1280.jpg') rgba(0, 0, 0, .8);
+    background: url('/background-1398819_1280.jpg') rgba(0, 0, 0, .2);
     background-size: cover;
     background-blend-mode: multiply;
 }
@@ -14,9 +14,13 @@
     margin: 0 auto;
  
     .title{
+        width: fit-content;
+        text-shadow: 0 0 9px black;
+        background-image: linear-gradient(transparent 60%, goldenrod 40%) ;
         color: white;
         font-size: 3rem;
         margin-top: 1rem;
+        
     }
 
     
@@ -52,7 +56,7 @@
             top: 0;
             left: 0;
             z-index: -1;    
-            border: 1px dashed goldenrod;
+            border: 2px dashed goldenrod;
         }
 
  
@@ -66,7 +70,8 @@
                 transform: translate(-1rem , -1rem);
             }
     
-            .title{
+            .title_card{
+                color: white;
                 position: absolute;
                 margin-top: 0;
                 bottom: 0;

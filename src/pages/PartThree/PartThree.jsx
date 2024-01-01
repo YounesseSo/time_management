@@ -49,7 +49,7 @@ export default function PartThree() {
 
                     <section className={styles.card_container} onClick={()=>setShowModal(1)}>
                         <div className={styles.card}>
-                            <div className={styles.title}>
+                            <div className={styles.title_card}>
                                 <h2 >Matrice d'Eisenhower</h2>
                             </div>
                             <div className={styles.image}>
@@ -64,7 +64,7 @@ export default function PartThree() {
 
                     <section className={styles.card_container} onClick={()=>setShowModal(2)}>
                         <div className={styles.card}>
-                            <div className={styles.title}>
+                            <div className={styles.title_card}>
                                 <h2 >La méthode Pomodoro</h2>
                             </div>
                             <div className={styles.image}>
@@ -79,11 +79,15 @@ export default function PartThree() {
 
                     <section className={styles.card_container} onClick={()=>setShowModal(3)}>
                         <div className={styles.card}>
-                            <div className={styles.title}>
-                                <h2 >La méthode Pomodoro</h2>
+                            <div className={styles.title_card}>
+                                <h2 >La méthode de Blocage de temps</h2>
                             </div>
                             <div className={styles.image}>
+<<<<<<< HEAD
                                 <img  src="/eisenhower-matrice.png" alt="eisenhower-matrice" />
+=======
+                                <img  src="/time-blocking.png" alt="time blocking" />
+>>>>>>> ebe2f1f84196c3152989a408c27f67dbb8ca86cb
                             </div>
 
                         </div>

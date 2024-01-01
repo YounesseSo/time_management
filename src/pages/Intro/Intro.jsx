@@ -10,7 +10,9 @@ export default function Intro() {
         <h1 className={styles.title}>Introduction</h1>
         <div className={styles.body}>
             <p>
-            La gestion du temps est une compétence cruciale dans notre vie quotidienne, tant sur le plan professionnel que personnel. Elle implique la planification, l'organisation et la priorisation des activités pour maximiser l'efficacité et atteindre les objectifs fixés. Cet exposé explore l'importance de la gestion du temps, les défis auxquels nous sommes confrontés et, les methodes les plus populaires de gestion de temps.
+              <span>
+              La gestion du temps est une compétence cruciale dans notre vie quotidienne, tant sur le plan professionnel que personnel. Elle implique la planification, l'organisation et la priorisation des activités pour maximiser l'efficacité et atteindre les objectifs fixés. Cet exposé explore l'importance de la gestion du temps, les défis auxquels nous sommes confrontés et, les methodes les plus populaires de gestion de temps.
+              </span>
             </p>
         </div>
 

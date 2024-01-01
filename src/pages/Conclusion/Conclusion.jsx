@@ -9,11 +9,13 @@ export default function Conclusion() {
       <h1 className={styles.title}>Conclusion</h1>
       <div className={styles.body}>
           <p>
-          En conclusion, la gestion du temps est un pilier essentiel de la réussite tant sur le plan professionnel que personnel. En comprenant les défis et en adoptant des stratégies appropriées, chacun peut améliorer sa capacité à gérer efficacement son temps, favorisant ainsi la productivité, le bien-être et l'accomplissement de ses objectifs.
+            <span>
+              En conclusion, la gestion du temps est un pilier essentiel de la réussite tant sur le plan professionnel que personnel. En comprenant les défis et en adoptant des stratégies appropriées, chacun peut améliorer sa capacité à gérer efficacement son temps, favorisant ainsi la productivité, le bien-être et l'accomplissement de ses objectifs.
+            </span>
           </p>
       </div>
 
-      <BottomNavigation previous={{path:'/part-3' , name:'Les methodes de gestion du temps'}} next={{path:'/' , name:'Acceuil'}}/>
+      <BottomNavigation previous={{path:'/part-3' , name:'Les methodes de gestion du temps'}} next={{path:'/end' , name:'La Fin'}}/>
     </div>
 
   

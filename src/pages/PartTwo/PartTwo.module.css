@@ -1,7 +1,7 @@
 .container{
     padding: 1rem;
     min-height: 100svh;
-    background: url('/background-1398819_1280.jpg') rgba(0, 0, 0, .8);
+    background: url('/background-1398819_1280.jpg') ;
     background-size: cover;
     background-blend-mode: multiply;
 }
@@ -17,7 +17,9 @@
         color: white;
         font-size: 3rem;
         margin-top: 1rem;
-        
+        max-width: fit-content;
+        text-shadow: 0 0 9px black;
+        background-image: linear-gradient(transparent 60%, goldenrod 40%) ;        
         @media (max-width:700px) {
             font-size: 2rem;
         }
@@ -27,8 +29,8 @@
 }
 
 .section{
-    border-left: solid 1px white;
-    padding-left: 2rem;
+    /* border-left: solid 1px white;
+    padding-left: 2rem; */
     margin-top: 4rem;
     @media (max-width:700px) {
         border-left: none;
@@ -39,7 +41,11 @@
         line-height: 2rem;
         font-size: 1.5rem;
         color: white;
-        position: relative;
+        background-image: linear-gradient(transparent 60%, goldenrod 40%) ;
+        background-repeat: no-repeat;
+        background-size: 50%;        
+        text-shadow: 0 0 9px black;
+
     }
 
    .body_section{
@@ -55,6 +61,11 @@
         p{
             font-size: 1.9rem;
             max-width: 900px;
+            padding: 1em;
+            background-color: rgb(22, 22, 22);
+            border-right: 10px solid goldenrod;
+            border-bottom: 10px solid goldenrod;
+
         }
 
         
